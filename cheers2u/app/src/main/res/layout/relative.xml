@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/beer2"/>
+
+
+    <TextView
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/button1"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter!"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/time"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:id="@+id/man"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="man"
+        android:textSize="23dp"
+        android:layout_alignBaseline="@+id/women"
+        android:layout_alignBottom="@+id/women"
+        android:layout_toRightOf="@+id/button1"
+        android:layout_toEndOf="@+id/button1" />
+
+    <CheckBox
+        android:id="@+id/women"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="woman"
+        android:textSize="23dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/button1"
+        android:layout_toStartOf="@+id/button1"
+        android:layout_marginTop="32dp" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="23dp"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/man"
+        android:layout_toRightOf="@+id/women"
+        android:layout_toEndOf="@+id/women" />
+
+    <EditText
+        android:id="@+id/dinks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="23dp"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/weight"
+        android:layout_alignLeft="@+id/weight"
+        android:layout_alignStart="@+id/weight" />
+
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="23dp"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/dinks"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignStart="@+id/button1" />
+
+    <TextView
+        android:id="@+id/drinks"
+        android:text="drinks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/dinks"
+        android:layout_alignBottom="@+id/dinks"
+        android:layout_toLeftOf="@+id/dinks"
+        android:layout_toStartOf="@+id/dinks"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:id="@+id/yourweight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_alignBottom="@+id/weight"
+        android:layout_marginBottom="11dp"
+        android:layout_toLeftOf="@+id/weight"
+        android:layout_toStartOf="@+id/weight"
+        android:text="weight(P)"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/T"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="How long(h)"
+        android:textColor="#000"
+        android:layout_alignBaseline="@+id/time"
+        android:layout_alignBottom="@+id/time"
+        android:layout_toLeftOf="@+id/time"
+        android:layout_toStartOf="@+id/time" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23dp"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:text="Blood Concentation level:"
+        android:textColor="#000"/>
+
+</RelativeLayout>
